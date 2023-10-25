@@ -1,7 +1,6 @@
 def study_schedule(permanence_periods, target_time):
     if target_time is None:
         return None
-
     count = 0
     for entry in permanence_periods:
         if not all(isinstance(val, int) for val in entry) \
